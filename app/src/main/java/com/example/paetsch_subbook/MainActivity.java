@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView list_view = (ListView) findViewById(R.id.list_view);
+        ListView list_view = (ListView) findViewById(R.id.subsList);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, subs);
         list_view.setAdapter(adapter);
         list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void newSub(View view){
+    public void newSub(View v){
         Intent intent = new Intent(this,description.class);
         startActivity(intent);
     }
