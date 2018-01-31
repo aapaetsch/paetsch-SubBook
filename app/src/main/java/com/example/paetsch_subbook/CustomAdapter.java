@@ -39,6 +39,7 @@ public class CustomAdapter extends ArrayAdapter<Subscription> {
         //setting
         sub_name.setText(subscriptionName);
         sub_date.setText(subscriptionDate);
+
         String sub_charge_string = String.valueOf(subscriptionCharge);
         sub_charge.setText(sub_charge_string);
 
@@ -53,7 +54,8 @@ public class CustomAdapter extends ArrayAdapter<Subscription> {
 
     public void editSubscription(int pos){
         Intent intent = new Intent(getContext(), editDescription.class);
-        intent.putExtra("Hello", pos);
+        //Todo: figure out the text below and why it is there
+        intent.putExtra("Subscription_Position", pos);
         ((Activity)getContext()).startActivityForResult(intent, 0);
 
     }

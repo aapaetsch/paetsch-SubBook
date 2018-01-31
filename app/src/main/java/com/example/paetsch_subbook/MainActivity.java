@@ -16,7 +16,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private ListView myListView;
 
-    public static ArrayList<Subscription> subscriptions = new ArrayList<>();
+    public static ArrayAdapter<Subscription> subscriptionAdapter;
+    public static ArrayList<Subscription> subscriptions;
 
 
     @Override

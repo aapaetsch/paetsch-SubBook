@@ -17,15 +17,6 @@
         android:weightSum="10">
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_weight="0.3"
-            android:text="Subscription Name:"
-            android:textSize="18sp" />
-
-        <TextView
             android:id="@+id/List_Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +44,7 @@
             android:id="@+id/List_Charge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
+            android:layout_weight="5.1"
             android:text="TextView"
             android:textColor="@color/colorPrimaryDark" />
 
