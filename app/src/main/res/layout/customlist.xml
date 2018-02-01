@@ -20,10 +20,13 @@
             android:id="@+id/List_Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="9.7"
+            android:layout_weight="10"
             android:text="TextView"
+            android:layout_marginLeft="8dp"
+            android:textAlignment="viewStart"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -32,6 +35,22 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="8dp"
+            android:text="Subscription Date:" />
+
+        <TextView
+            android:id="@+id/List_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/textView4"
@@ -48,20 +67,6 @@
             android:text="TextView"
             android:textColor="@color/colorPrimaryDark" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Subscription Date:" />
-
-        <TextView
-            android:id="@+id/List_Date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:text="TextView"
-            android:textColor="@color/colorPrimaryDark" />
     </LinearLayout>
 
 </LinearLayout>

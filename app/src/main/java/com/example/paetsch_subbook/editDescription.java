@@ -24,26 +24,26 @@ public class editDescription extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_description);
+        setContentView(R.layout.activity_edit_description);
 
-        Intent intent = getIntent();
-        pos = Integer.parseInt(intent.getStringExtra("Subscription_Position"));
-        subscription = MainActivity.subscriptions.get(pos);
-
-        delButton = (Button) findViewById(R.id.del);
-        delButton.setVisibility(View.VISIBLE);
-        addButton = (Button) findViewById(R.id.add);
-        addButton.setText("Save");
-
-        TextView sName = (TextView) findViewById(R.id.subName);
-        TextView sDate = (TextView) findViewById(R.id.subDate);
-        TextView sCharge = (TextView) findViewById(R.id.subCharge);
-        TextView sComment = (TextView) findViewById(R.id.subComment);
-
-        sName.setText(MainActivity.subscriptions.get(pos).getSubscriptionName());
-        sDate.setText(MainActivity.subscriptions.get(pos).getSubscriptionDate());
-        sCharge.setText(String.valueOf(MainActivity.subscriptions.get(pos).getSubscriptionCharge()));
-        sComment.setText(MainActivity.subscriptions.get(pos).getSubscriptionComment());
+//        Intent intent = getIntent();
+//        pos = Integer.parseInt(intent.getStringExtra("Subscription_Position"));
+//        subscription = MainActivity.subscriptions.get(pos);
+//
+//        delButton = (Button) findViewById(R.id.del);
+//        delButton.setVisibility(View.VISIBLE);
+//        addButton = (Button) findViewById(R.id.add);
+//        addButton.setText("Save");
+//
+//        TextView sName = (TextView) findViewById(R.id.subName);
+//        TextView sDate = (TextView) findViewById(R.id.subDate);
+//        TextView sCharge = (TextView) findViewById(R.id.subCharge);
+//        TextView sComment = (TextView) findViewById(R.id.subComment);
+//
+//        sName.setText(MainActivity.subscriptions.get(pos).getSubscriptionName());
+//        sDate.setText(MainActivity.subscriptions.get(pos).getSubscriptionDate());
+//        sCharge.setText(String.valueOf(MainActivity.subscriptions.get(pos).getSubscriptionCharge()));
+//        sComment.setText(MainActivity.subscriptions.get(pos).getSubscriptionComment());
 
 
 

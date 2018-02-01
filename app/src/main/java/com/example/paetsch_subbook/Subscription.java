@@ -41,11 +41,20 @@ public class Subscription implements Serializable {
     public String getSubscriptionComment(){
         return this.subscriptionComment;
     }
-    public void editSubscription(String subscriptionName, String subscriptionDate, float subscriptionCharge, String subscriptionComment){
+
+    public void setSubscriptionName(String subscriptionName) {
         this.subscriptionName = subscriptionName;
-        this.subscriptionDate = subscriptionDate;
-        this.subscriptionCharge = subscriptionCharge;
-        this.subscriptionComment = subscriptionComment;
     }
 
+    public void setSubscriptionDate(String subscriptionDate) {
+        this.subscriptionDate = subscriptionDate;
+    }
+
+    public void setSubscriptionCharge(float subscriptionCharge) {
+        this.subscriptionCharge = subscriptionCharge;
+    }
+
+    public void setSubscriptionComment(String subscriptionComment) {
+        this.subscriptionComment = subscriptionComment;
+    }
 }
